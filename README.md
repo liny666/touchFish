@@ -1,5 +1,7 @@
 # 摸鱼神器 · touchFish
 
+[English README](README.en.md)
+
 Windows 桌面阅读与悬浮视频工具，支持 TXT 小说、VS Code 风格阅读、本地视频裁剪、广告伪装，以及一键隐藏和恢复。
 
 **[下载最新 Windows x64 便携版](https://github.com/liny666/touchFish/releases/latest)** · [后续计划](docs/FUTURE_IMPLEMENTATION.md)
@@ -8,7 +10,7 @@ Windows 桌面阅读与悬浮视频工具，支持 TXT 小说、VS Code 风格�
 
 ## 下载与运行
 
-1. 打开上方下载页面，在 **Assets** 中下载 **Moyu-1.0.1-win-x64.exe**，约 100 MB。
+1. 打开上方下载页面，在 **Assets** 中下载 **Moyu-1.0.2-win-x64.exe**，约 100 MB。
 2. 双击运行。只需要一个 EXE，无需安装 Node.js，也无需下载其他文件。首次运行会自动解压运行资源，可能需要等待几秒。
 3. 可选下载 **SHA256SUMS.txt**，用于核对文件的 SHA-256。
 
@@ -17,6 +19,14 @@ Windows 桌面阅读与悬浮视频工具，支持 TXT 小说、VS Code 风格�
 GitHub 的 **Code → Download ZIP** 下载的是本页面的文档，不是可运行的软件，请到 **Releases** 下载 EXE。
 
 ![主窗口](docs/screenshots/01-main.png)
+
+## 中英文切换
+
+在「设置 → 界面语言」选择 **English** 或 **简体中文**，点击「保存设置」。所有已打开窗口和托盘立即切换，下次启动记住选择。英文界面中的入口是 **Settings → Interface language → Save settings**。
+
+应用界面、按钮、提示和内置广告支持英文；小说正文、书名、自定义图片及第三方平台界面保留原内容。
+
+![英文设置](docs/screenshots/language-settings-en.png)
 
 ## 功能与使用
 
@@ -88,4 +98,6 @@ v1.0.1 再次通过 9 项核心测试，并使用真实解包 EXE 和单文件�
 
 尚未完整验收 Windows 10、不同 DPI、多显示器热插拔及大型单章文本压力场景；在线视频样例成功不代表所有链接可用。
 
-后续计划：[在线视频裁剪、外部小说平台及漫画、英文界面](docs/FUTURE_IMPLEMENTATION.md)。这些属于待尝试功能，当前版本尚未支持。
+v1.0.2 新增中英文界面切换，并通过语言同步、英文阅读/视频操作和重启保存验证。
+
+后续计划：[在线视频裁剪、外部小说平台及漫画、广告界面优化、模拟下载和 macOS 适配](docs/FUTURE_IMPLEMENTATION.md)。这些属于待尝试功能，当前版本尚未支持。
