@@ -12,9 +12,9 @@ This repository provides documentation, screenshots and software downloads. Sour
 
 ## 下载与运行 / Download and run
 
-在 Release 页面的 **Assets** 中下载 **Moyu-1.0.2-win-x64.exe**（约 100 MB），双击即可运行。只需要一个 EXE，无需安装 Node.js 或下载其他文件。首次启动会自动解压运行资源，可能需要等待几秒。可选下载 **SHA256SUMS.txt** 核对文件校验值。
+在 Release 页面的 **Assets** 中下载 **Moyu-1.0.3-win-x64.exe**（约 100 MB），双击即可运行。只需要一个 EXE，无需安装 Node.js 或下载其他文件。首次启动会自动解压运行资源，可能需要等待几秒。可选下载 **SHA256SUMS.txt** 核对文件校验值。
 
-Download **Moyu-1.0.2-win-x64.exe** (about 100 MB) from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. Optionally use **SHA256SUMS.txt** to verify the download checksum.
+Download **Moyu-1.0.3-win-x64.exe** (about 100 MB) from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. Optionally use **SHA256SUMS.txt** to verify the download checksum.
 
 适用于 Windows x64，已在 Windows 11 x64 实测；Windows 10 尚未在另一台实体机上单独验收。当前不提供 macOS、Linux 或手机版。EXE 尚未签名，下载或启动时可能出现系统安全提示。
 
@@ -72,9 +72,9 @@ To crop: **Crop region → Draw again → draw a rectangle → adjust its corner
 
 YouTube links, Bilibili BV links/IDs and multi-part selection are supported. Expand b23 short links in your browser first. Official platform players are used; online cropping and stretching are currently disabled.
 
-隐藏或切换广告会销毁在线播放器。YouTube 恢复时按最近读取的位置重建，精度约一秒；Bilibili 恢复从头开始。两者都不会自动播放。是否可播取决于平台、视频权限和网络，不可用或禁止嵌入的视频无法保证播放。
+YouTube 隐藏或切换广告后会重建播放器，按最近读取的位置恢复，精度约一秒。v1.0.3 起，Bilibili 会先静音、移出画面并暂停，正常切换时保留原播放器和观看位置，切回后需手动继续播放。暂停失败或超时会关闭播放器，恢复时尝试从保存的整秒位置重建。该保留功能依赖平台页面兼容性；播放仍受视频权限和网络影响。
 
-Hiding or disguising destroys the online player. YouTube restores near the last observed position (about one-second precision); Bilibili restarts from the beginning. Neither resumes automatically. Playback depends on the platform, video permissions and network. Unavailable videos or videos with embedding disabled may not play.
+YouTube is rebuilt after hiding/disguising and restores near the last observed position (about one-second precision). From v1.0.3, Bilibili is natively muted, detached and paused, retaining the same player and position during normal switching. Resume playback manually after restoring. If pausing fails or times out, the player is closed and reloaded at the saved whole-second position where supported. Retention depends on compatibility with the platform page; video permissions and network still affect playback.
 
 ## 广告伪装与快捷键 / Disguises and shortcuts
 
@@ -123,6 +123,10 @@ Book copies, bookmarks, progress, settings and window positions stay on your com
 After quitting the app, deleting the data directory shown in Settings removes local copies, caches and settings.
 
 ## 验证与后续计划 / Verification and roadmap
+
+v1.0.3 通过 17 项核心测试，并在真实 B 站视频约 65 秒处验证广告切换、隐藏恢复和快速切换保留进度；模拟暂停失败后，也验证了关闭播放器及从保存位置重新播放。
+
+v1.0.3 passed 17 core tests. A real Bilibili video was tested around the 65-second mark for position retention across ads, hiding and rapid toggles. Injected pause failure also verified destruction and playback from the saved position.
 
 v1.0.2 通过 12 项核心/本地化测试和 5 组真实 Electron 语言验收。解包版与单文件便携版均实测语言切换、MP4 播放、隐藏后再次启动恢复和退出。首版还完成了阅读、快捷键、原生对话框等桌面与边界验收，并用具体样例验证两个官方在线平台实际播放。
 
