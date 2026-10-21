@@ -12,9 +12,9 @@ This repository provides documentation, screenshots and software downloads. Sour
 
 ## 下载与运行 / Download and run
 
-在 Release 页面的 **Assets** 中下载 **Moyu-1.0.5-win-x64.exe**（约 100 MB），双击即可运行。只需要一个 EXE，无需安装 Node.js 或下载其他文件。首次启动会自动解压运行资源，可能需要等待几秒。可选下载 **SHA256SUMS.txt** 核对文件校验值。
+在 Release 页面的 **Assets** 中下载 **Moyu-1.0.6-win-x64.exe**（约 100 MB），双击即可运行。只需要一个 EXE，无需安装 Node.js 或下载其他文件。首次启动会自动解压运行资源，可能需要等待几秒。可选下载 **SHA256SUMS.txt** 核对文件校验值。
 
-Download **Moyu-1.0.5-win-x64.exe** (about 100 MB) from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. Optionally use **SHA256SUMS.txt** to verify the download checksum.
+Download **Moyu-1.0.6-win-x64.exe** (about 100 MB) from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. Optionally use **SHA256SUMS.txt** to verify the download checksum.
 
 适用于 Windows x64，已在 Windows 11 x64 实测；Windows 10 尚未在另一台实体机上单独验收。当前不提供 macOS、Linux 或手机版。EXE 尚未签名，下载或启动时可能出现系统安全提示。
 
@@ -82,13 +82,13 @@ v1.0.4 起，在 **伪装皮肤 → 替代页面** 选择广告、时钟、计�
 
 From v1.0.4, choose **Disguises → Replacement page → Ad / Clock / Timer / Music player → Open replacement page**. No video is required. Switch at the bottom of the floating window or save a default in Settings. F7 toggles video and the selected page.
 
-时钟显示本地时间与日期。计时器提供倒计时、秒表、暂停与重置，隐藏、切页或重启后按实际经过时间继续，到时仅显示提示。音乐播放器提供本地歌单、手动上一首／下一首、播放暂停、进度与音量，支持 MP3、WAV、M4A 等格式，实际解码能力取决于编码；未接入外部音乐账号和在线曲库。
+时钟显示本地时间与日期。计时器提供倒计时、秒表、暂停与重置，隐藏、切页或重启后按实际经过时间继续，到时仅显示提示。v1.0.6 起，音乐页改为无声模拟：手动输入最多 10 首歌名，分别设置时长（分:秒或时:分:秒）；播放／暂停、切歌和进度拖动只改变画面，不发出音乐。
 
-The clock shows local time and date. Countdown and stopwatch support pause/reset and keep time across hiding, page switches and restarts, with silent visual completion. The music player provides a local playlist, manual previous/next, play/pause, seeking and volume. MP3, WAV, M4A and other formats are accepted; codec support varies. External music accounts and streaming catalogs are not connected.
+The clock shows local time and date. Countdown and stopwatch support pause/reset and keep time across hiding, page switches and restarts, with silent visual completion. From v1.0.6, the music page is a silent simulation: type up to 10 track names and set each duration (min:sec or hr:min:sec). Play/pause, track navigation and seeking change only the display; no music is played.
 
-隐藏、最小化、换模式或切回视频会停止音乐，恢复后手动播放。视频和音乐不会同时播放。页面选择、歌单和计时状态保存在本机；歌单按原路径引用文件，移除条目不会删除原音频。
+隐藏、最小化、换模式或切回视频会暂停模拟进度，恢复后手动继续。歌名、时长、进度与计时状态保存在本机；旧版音频歌单只迁移名称，默认时长 3 分钟，最多保留前 10 首，不再引用文件路径。
 
-Hiding, minimizing, changing mode or restoring video stops music. Resume manually; video and music do not play together. Mode, playlist and timer state stay on your computer. Tracks reference their original paths; removing a playlist entry does not delete the audio file.
+Hiding, minimizing, changing mode or restoring video pauses simulated progress; resume manually. Names, durations, position and timer state stay on your computer. Older audio playlists migrate names only, with a default three-minute duration and a limit of 10 tracks; file paths are no longer used.
 
 ![时钟 / Clock](docs/screenshots/alternatives-clock.png)
 

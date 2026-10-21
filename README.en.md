@@ -6,7 +6,7 @@ A local desktop app for TXT reading, floating video, visual disguises and quick 
 
 ## Download and run
 
-Download **Moyu-1.0.5-win-x64.exe** from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. SHA256SUMS.txt provides the download checksum.
+Download **Moyu-1.0.6-win-x64.exe** from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. SHA256SUMS.txt provides the download checksum.
 
 The app is built for Windows x64 and tested on Windows 11. Windows 10 has not been separately tested on another physical device. macOS, Linux and mobile versions are not currently available. The EXE is unsigned, so your system may display a download or startup warning.
 
@@ -38,9 +38,9 @@ In **Disguises → Replacement page**, choose Ad, Clock, Timer or Music player, 
 
 - **Clock:** live local system time and date.
 - **Timer:** countdown or stopwatch, start/pause/reset, custom minutes and presets. Time continues across page switches, hiding, sleep and app restarts. Completion is visual and silent.
-- **Music player:** import local MP3/WAV/M4A/AAC/OGG/FLAC/Opus files, playlist selection, manual previous/next track, play/pause, seeking and volume. Codec support varies; PCM WAV playback was tested. External music accounts and streaming catalogs are not connected.
+- **Simulated music page (v1.0.6):** type up to 10 track names and set each duration (min:sec or hr:min:sec). Play/pause, previous/next and seeking animate the display only. No music is played.
 
-Mode, playlist, position, volume and timer state are saved locally. Music files are referenced by their original path; removing a playlist entry does not delete the file. Hiding, minimizing, changing mode, restoring video or closing the window stops music. Resume manually; video and music do not play together.
+Mode, names, durations, position and timer state are saved locally. Older audio playlists migrate names only, with a default three-minute duration and a limit of 10 tracks; file paths are no longer used. Hiding, minimizing, changing mode, restoring video or closing the window pauses simulated progress. Resume manually.
 
 ![Local music player](docs/screenshots/alternatives-music-en.png)
 
