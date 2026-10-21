@@ -6,7 +6,7 @@ A local desktop app for TXT reading, floating video, visual disguises and quick 
 
 ## Download and run
 
-Download **Moyu-1.0.6-win-x64.exe** from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. SHA256SUMS.txt provides the download checksum.
+Download **Moyu-1.0.7-win-x64.exe** from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. SHA256SUMS.txt provides the download checksum.
 
 The app is built for Windows x64 and tested on Windows 11. Windows 10 has not been separately tested on another physical device. macOS, Linux and mobile versions are not currently available. The EXE is unsigned, so your system may display a download or startup warning.
 
@@ -45,6 +45,12 @@ Mode, names, durations, position and timer state are saved locally. Older audio 
 ![Local music player](docs/screenshots/alternatives-music-en.png)
 
 From v1.0.5, the preview below the Replacement page selector follows your choice: live Clock, Timer or Music player appearance, or the original ad cards. Previews do not play audio or change timer state. Use **Open replacement page** to operate the actual page.
+
+From v1.0.7, select an ad skin, Clock, Timer or Music player in **Disguises**, then choose its **Theme color**. Each disguise remembers its own color, and the preview and floating page update immediately. **Reset color** affects only the selected disguise. Built-in ad artwork changes color; imported images keep their original colors.
+
+![Custom-colored ad](docs/screenshots/alternatives-color-ad-en.png)
+
+![Custom-colored clock](docs/screenshots/alternatives-color-clock.png)
 
 ## Shortcuts and tray
 

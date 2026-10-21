@@ -12,9 +12,9 @@ This repository provides documentation, screenshots and software downloads. Sour
 
 ## 下载与运行 / Download and run
 
-在 Release 页面的 **Assets** 中下载 **Moyu-1.0.6-win-x64.exe**（约 100 MB），双击即可运行。只需要一个 EXE，无需安装 Node.js 或下载其他文件。首次启动会自动解压运行资源，可能需要等待几秒。可选下载 **SHA256SUMS.txt** 核对文件校验值。
+在 Release 页面的 **Assets** 中下载 **Moyu-1.0.7-win-x64.exe**（约 100 MB），双击即可运行。只需要一个 EXE，无需安装 Node.js 或下载其他文件。首次启动会自动解压运行资源，可能需要等待几秒。可选下载 **SHA256SUMS.txt** 核对文件校验值。
 
-Download **Moyu-1.0.6-win-x64.exe** (about 100 MB) from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. Optionally use **SHA256SUMS.txt** to verify the download checksum.
+Download **Moyu-1.0.7-win-x64.exe** (about 100 MB) from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. Optionally use **SHA256SUMS.txt** to verify the download checksum.
 
 适用于 Windows x64，已在 Windows 11 x64 实测；Windows 10 尚未在另一台实体机上单独验收。当前不提供 macOS、Linux 或手机版。EXE 尚未签名，下载或启动时可能出现系统安全提示。
 
@@ -97,6 +97,14 @@ Hiding, minimizing, changing mode or restoring video pauses simulated progress; 
 v1.0.5 起，在「替代页面」选择时钟、计时器或音乐后，下方直接展示对应外观预览；选择广告则显示原来的广告皮肤卡片。预览不会播放音乐或更改计时，实际操作请点击「打开替代页面」。
 
 From v1.0.5, choosing Clock, Timer or Music player immediately shows its appearance preview below the selector. Choosing Ad restores the original ad cards. Previews do not play audio or change timer state. Select **Open replacement page** to use the actual features.
+
+v1.0.7 起，可在「伪装皮肤」选择广告皮肤、时钟、计时器或音乐后，通过「主题颜色」手动选色。每种皮肤分别记住颜色，下方预览和实际悬浮页面立即同步；「恢复默认颜色」只重置当前皮肤。内置广告素材会换成选定底色，用户导入的图片保留原色。
+
+From v1.0.7, select an ad skin, Clock, Timer or Music player in **Disguises**, then choose its **Theme color**. Each disguise remembers its own color, and the preview and floating page update immediately. **Reset color** affects only the selected disguise. Built-in ad artwork changes color; imported images keep their original colors.
+
+![自选颜色广告 / Custom-colored ad](docs/screenshots/alternatives-color-ad-en.png)
+
+![自选颜色时钟 / Custom-colored clock](docs/screenshots/alternatives-color-clock.png)
 
 ## 广告伪装与快捷键 / Disguises and shortcuts
 
