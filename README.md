@@ -12,9 +12,9 @@ This repository provides documentation, screenshots and software downloads. Sour
 
 ## 下载与运行 / Download and run
 
-在 Release 页面的 **Assets** 中下载 **Moyu-1.0.3-win-x64.exe**（约 100 MB），双击即可运行。只需要一个 EXE，无需安装 Node.js 或下载其他文件。首次启动会自动解压运行资源，可能需要等待几秒。可选下载 **SHA256SUMS.txt** 核对文件校验值。
+在 Release 页面的 **Assets** 中下载 **Moyu-1.0.4-win-x64.exe**（约 100 MB），双击即可运行。只需要一个 EXE，无需安装 Node.js 或下载其他文件。首次启动会自动解压运行资源，可能需要等待几秒。可选下载 **SHA256SUMS.txt** 核对文件校验值。
 
-Download **Moyu-1.0.3-win-x64.exe** (about 100 MB) from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. Optionally use **SHA256SUMS.txt** to verify the download checksum.
+Download **Moyu-1.0.4-win-x64.exe** (about 100 MB) from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. Optionally use **SHA256SUMS.txt** to verify the download checksum.
 
 适用于 Windows x64，已在 Windows 11 x64 实测；Windows 10 尚未在另一台实体机上单独验收。当前不提供 macOS、Linux 或手机版。EXE 尚未签名，下载或启动时可能出现系统安全提示。
 
@@ -76,6 +76,24 @@ YouTube 隐藏或切换广告后会重建播放器，按最近读取的位置恢
 
 YouTube is rebuilt after hiding/disguising and restores near the last observed position (about one-second precision). From v1.0.3, Bilibili is natively muted, detached and paused, retaining the same player and position during normal switching. Resume playback manually after restoring. If pausing fails or times out, the player is closed and reloaded at the saved whole-second position where supported. Retention depends on compatibility with the platform page; video permissions and network still affect playback.
 
+## 时钟、计时器与音乐 / Clock, timer and music
+
+v1.0.4 起，在 **伪装皮肤 → 替代页面** 选择广告、时钟、计时器或音乐播放器，点击 **打开替代页面**；无需先选视频。悬浮窗口底部也能切换，设置中可保存默认页面，F7 在视频和选中页面之间切换。
+
+From v1.0.4, choose **Disguises → Replacement page → Ad / Clock / Timer / Music player → Open replacement page**. No video is required. Switch at the bottom of the floating window or save a default in Settings. F7 toggles video and the selected page.
+
+时钟显示本地时间与日期。计时器提供倒计时、秒表、暂停与重置，隐藏、切页或重启后按实际经过时间继续，到时仅显示提示。音乐播放器提供本地歌单、手动上一首／下一首、播放暂停、进度与音量，支持 MP3、WAV、M4A 等格式，实际解码能力取决于编码；未接入外部音乐账号和在线曲库。
+
+The clock shows local time and date. Countdown and stopwatch support pause/reset and keep time across hiding, page switches and restarts, with silent visual completion. The music player provides a local playlist, manual previous/next, play/pause, seeking and volume. MP3, WAV, M4A and other formats are accepted; codec support varies. External music accounts and streaming catalogs are not connected.
+
+隐藏、最小化、换模式或切回视频会停止音乐，恢复后手动播放。视频和音乐不会同时播放。页面选择、歌单和计时状态保存在本机；歌单按原路径引用文件，移除条目不会删除原音频。
+
+Hiding, minimizing, changing mode or restoring video stops music. Resume manually; video and music do not play together. Mode, playlist and timer state stay on your computer. Tracks reference their original paths; removing a playlist entry does not delete the audio file.
+
+![时钟 / Clock](docs/screenshots/alternatives-clock.png)
+
+![英文音乐播放器 / English music player](docs/screenshots/alternatives-music-en.png)
+
 ## 广告伪装与快捷键 / Disguises and shortcuts
 
 可选择课程、商品、软件或工作面板外观，也可导入自定义广告图片。同一个视频窗口切换广告后停止声音，恢复时视频保持暂停。
@@ -85,7 +103,7 @@ Choose a course, shopping, software or work style, or import custom artwork. Swi
 | 默认按键 / Default key | 中文动作 | English action |
 | --- | --- | --- |
 | F6 | 隐藏全部窗口，停止声音 | Hide all windows and stop audio |
-| F7 | 切换已打开的视频窗口为广告伪装 | Switch an open video window between video and ad |
+| F7 | 切换视频与选中的替代页面 | Switch video and the selected replacement page |
 | F8 | 恢复隐藏前可见的窗口 | Restore previously visible windows |
 
 如果顶排按键控制亮度或音量，请使用 **Fn + F6 / F7 / F8**。也可在设置中改为 Ctrl+Alt+H、Ctrl+Alt+J、Ctrl+Alt+K，保存后检查注册结果。被其他软件占用的按键会显示注册失败。

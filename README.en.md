@@ -6,7 +6,7 @@ A local desktop app for TXT reading, floating video, visual disguises and quick 
 
 ## Download and run
 
-Download **Moyu-1.0.3-win-x64.exe** from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. SHA256SUMS.txt provides the download checksum.
+Download **Moyu-1.0.4-win-x64.exe** from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. SHA256SUMS.txt provides the download checksum.
 
 The app is built for Windows x64 and tested on Windows 11. Windows 10 has not been separately tested on another physical device. macOS, Linux and mobile versions are not currently available. The EXE is unsigned, so your system may display a download or startup warning.
 
@@ -32,12 +32,24 @@ In English, use **Settings → Interface language → Save settings** to switch 
 
 ![English ad view](docs/screenshots/language-ad-en.png)
 
+## Clock, timer and local music (v1.0.4)
+
+In **Disguises → Replacement page**, choose Ad, Clock, Timer or Music player, then click **Open replacement page**. No video is required. You can also switch at the bottom of the floating window or save a default in Settings. F7 toggles between video and your selected page; restored video stays paused.
+
+- **Clock:** live local system time and date.
+- **Timer:** countdown or stopwatch, start/pause/reset, custom minutes and presets. Time continues across page switches, hiding, sleep and app restarts. Completion is visual and silent.
+- **Music player:** import local MP3/WAV/M4A/AAC/OGG/FLAC/Opus files, playlist selection, manual previous/next track, play/pause, seeking and volume. Codec support varies; PCM WAV playback was tested. External music accounts and streaming catalogs are not connected.
+
+Mode, playlist, position, volume and timer state are saved locally. Music files are referenced by their original path; removing a playlist entry does not delete the file. Hiding, minimizing, changing mode, restoring video or closing the window stops music. Resume manually; video and music do not play together.
+
+![Local music player](docs/screenshots/alternatives-music-en.png)
+
 ## Shortcuts and tray
 
 | Default key | Action |
 | --- | --- |
 | F6 | Hide all windows and stop audio |
-| F7 | Switch an open video window between video and ad |
+| F7 | Switch video and the selected replacement page in the floating window |
 | F8 | Restore previously visible windows |
 
 If the top row controls brightness or volume, hold **Fn** with F6/F7/F8. You can also configure modifier shortcuts such as Ctrl+Alt+H in Settings; check that registration succeeds. Number 6 and numpad 6 work only inside focused reader/video windows outside text inputs.
