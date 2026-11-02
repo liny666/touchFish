@@ -12,17 +12,17 @@ This repository provides documentation, screenshots and software downloads. Sour
 
 ## 下载与运行 / Download and run
 
-在 Release 页面的 **Assets** 中下载 **Moyu-1.0.7-win-x64.exe**（约 100 MB），双击即可运行。只需要一个 EXE，无需安装 Node.js 或下载其他文件。首次启动会自动解压运行资源，可能需要等待几秒。可选下载 **SHA256SUMS.txt** 核对文件校验值。
+在 Release 页面的 **Assets** 中下载 **Moyu-1.0.8-win-x64.exe**（约 100 MB），双击即可运行。只需要一个 EXE，无需安装 Node.js 或下载其他文件。首次启动会自动解压运行资源，可能需要等待几秒。可选下载 **SHA256SUMS.txt** 核对文件校验值。
 
-Download **Moyu-1.0.7-win-x64.exe** (about 100 MB) from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. Optionally use **SHA256SUMS.txt** to verify the download checksum.
+Download **Moyu-1.0.8-win-x64.exe** (about 100 MB) from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. Optionally use **SHA256SUMS.txt** to verify the download checksum.
 
 适用于 Windows x64，已在 Windows 11 x64 实测；Windows 10 尚未在另一台实体机上单独验收。当前不提供 macOS、Linux 或手机版。EXE 尚未签名，下载或启动时可能出现系统安全提示。
 
 Built for Windows x64 and tested on Windows 11. Windows 10 has not been separately tested on another physical device. macOS, Linux and mobile versions are not currently available. The EXE is unsigned, so your system may display a download or startup warning.
 
-**Code → Download ZIP** 下载的是文档，不是可运行的软件。请到 **Releases** 下载 EXE。
+**Code → Download ZIP** 以及 Release 自动显示的 **Source code (zip/tar.gz)** 都只是此公开文档仓库的快照，不含应用源码，也不是可运行的软件。请到 **Releases → Assets** 下载 EXE。
 
-**Code → Download ZIP** contains documentation, not the runnable app. Download the EXE from **Releases**.
+**Code → Download ZIP** and the automatically generated **Source code (zip/tar.gz)** on each release are snapshots of this documentation-only repository. They contain neither the app's source code nor a runnable app. Download the EXE from **Releases → Assets**.
 
 ![主窗口 / Main window](docs/screenshots/01-main.png)
 
@@ -72,15 +72,19 @@ To crop: **Crop region → Draw again → draw a rectangle → adjust its corner
 
 YouTube links, Bilibili BV links/IDs and multi-part selection are supported. Expand b23 short links in your browser first. Official platform players are used; online cropping and stretching are currently disabled.
 
-YouTube 隐藏或切换广告后会重建播放器，按最近读取的位置恢复，精度约一秒。v1.0.3 起，Bilibili 会先静音、移出画面并暂停，正常切换时保留原播放器和观看位置，切回后需手动继续播放。暂停失败或超时会关闭播放器，恢复时尝试从保存的整秒位置重建。该保留功能依赖平台页面兼容性；播放仍受视频权限和网络影响。
+YouTube 现在会通过官方 API 暂停并保留播放器；Bilibili 会先静音、移出画面并暂停，正常切换时保留原播放器和观看位置。手动切回后需继续播放；悬停模式会尝试自动继续。暂停失败时会关闭播放器并从保存位置重建。保留功能依赖平台兼容性，播放仍受视频权限和网络影响。
 
-YouTube is rebuilt after hiding/disguising and restores near the last observed position (about one-second precision). From v1.0.3, Bilibili is natively muted, detached and paused, retaining the same player and position during normal switching. Resume playback manually after restoring. If pausing fails or times out, the player is closed and reloaded at the saved whole-second position where supported. Retention depends on compatibility with the platform page; video permissions and network still affect playback.
+YouTube now pauses through its official API and retains its player. Bilibili is natively muted, detached and paused, retaining the same player and position during normal switching. Resume manually after ordinary switching; hover mode attempts to resume automatically. If pausing fails, the player is closed and reloaded near its saved position where supported. Retention depends on platform compatibility, video permissions and network access.
 
 ## 时钟、计时器与音乐 / Clock, timer and music
 
 v1.0.4 起，在 **伪装皮肤 → 替代页面** 选择广告、时钟、计时器或音乐播放器，点击 **打开替代页面**；无需先选视频。悬浮窗口底部也能切换，设置中可保存默认页面，F7 在视频和选中页面之间切换。
 
 From v1.0.4, choose **Disguises → Replacement page → Ad / Clock / Timer / Music player → Open replacement page**. No video is required. Switch at the bottom of the floating window or save a default in Settings. F7 toggles video and the selected page.
+
+v1.0.8 新增可选的「鼠标悬停显示视频，移开恢复替代页面」。在「伪装皮肤 → 替代页面」勾选后，先打开替代页面：鼠标移入小窗口显示并继续播放视频；移开就暂停、静音并恢复广告／时钟／计时器／音乐页面。F6 紧急隐藏始终优先。在线平台可能阻止自动播放，此时可用平台播放按钮。
+
+v1.0.8 adds an optional **Show video on hover** switch in **Disguises → Replacement page**. Open the replacement page first. Moving the pointer into the small window shows and resumes video; moving away pauses and mutes it, then restores the selected disguise. F6 emergency hiding still takes priority. If a platform blocks automatic playback, use its own play control.
 
 时钟显示本地时间与日期。计时器提供倒计时、秒表、暂停与重置，隐藏、切页或重启后按实际经过时间继续，到时仅显示提示。v1.0.6 起，音乐页改为无声模拟：手动输入最多 10 首歌名，分别设置时长（分:秒或时:分:秒）；播放／暂停、切歌和进度拖动只改变画面，不发出音乐。
 

@@ -6,11 +6,11 @@ A local desktop app for TXT reading, floating video, visual disguises and quick 
 
 ## Download and run
 
-Download **Moyu-1.0.7-win-x64.exe** from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. SHA256SUMS.txt provides the download checksum.
+Download **Moyu-1.0.8-win-x64.exe** from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. SHA256SUMS.txt provides the download checksum.
 
 The app is built for Windows x64 and tested on Windows 11. Windows 10 has not been separately tested on another physical device. macOS, Linux and mobile versions are not currently available. The EXE is unsigned, so your system may display a download or startup warning.
 
-**Code → Download ZIP** contains these documents, not the runnable app. Use Releases to download the EXE.
+**Code → Download ZIP** and each release's automatically generated **Source code (zip/tar.gz)** contain only this repository's documentation and screenshots. They do not contain the app's source code or a runnable app. Use **Releases → Assets** to download the EXE.
 
 Before upgrading, right-click the existing app's fish icon in the system tray and choose **Quit / 完全退出**, then start the new EXE. Your local books, progress and settings are retained.
 
@@ -28,13 +28,15 @@ In English, use **Settings → Interface language → Save settings** to switch 
 - **Floating video:** independent frameless windows, always-on-top, position/size lock, volume, mute and seeking. MP4 support depends on the codec; a playable H.264/AAC demo is included.
 - **Local crop:** choose **Crop region → Draw again**, drag out a rectangle, adjust its corners or position, then select **Apply crop**. **Full frame** resets it. Cropping changes the display, not the original file.
 - **Disguises:** built-in course, shopping, software and work styles, plus custom artwork. Switching to an ad pauses and silences playback; restoring leaves it paused.
-- **Online players:** official YouTube and Bilibili embeds. Online cropping is currently disabled. YouTube restores near its last observed position; Bilibili pauses and retains its player and position while hidden/disguised. If pausing fails or times out, it is closed and reloaded at the saved whole-second position where supported. Retention depends on platform page compatibility. Neither resumes automatically. Availability depends on the platform, network and video permissions.
+- **Online players:** official YouTube and Bilibili embeds. Online cropping is currently disabled. Both players are paused, muted and retained during normal hiding/disguising; manual switching back leaves playback paused. Hover mode attempts to resume automatically. If pausing fails, the player is closed and reloaded near its saved position where supported. Availability depends on platform compatibility, network and video permissions.
 
 ![English ad view](docs/screenshots/language-ad-en.png)
 
 ## Clock, timer and local music (v1.0.4)
 
 In **Disguises → Replacement page**, choose Ad, Clock, Timer or Music player, then click **Open replacement page**. No video is required. You can also switch at the bottom of the floating window or save a default in Settings. F7 toggles between video and your selected page; restored video stays paused.
+
+From v1.0.8, you can turn on **Show video on hover** in **Disguises → Replacement page**. Open the replacement page, then move the pointer into the small window to show and resume video. Move it away to pause, mute and restore the selected disguise. F6 emergency hiding always takes priority. A platform may block automatic playback; use its own play control if needed.
 
 - **Clock:** live local system time and date.
 - **Timer:** countdown or stopwatch, start/pause/reset, custom minutes and presets. Time continues across page switches, hiding, sleep and app restarts. Completion is visual and silent.
