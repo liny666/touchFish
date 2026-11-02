@@ -12,9 +12,9 @@ This repository provides documentation, screenshots and software downloads. Sour
 
 ## 下载与运行 / Download and run
 
-在 Release 页面的 **Assets** 中下载 **Moyu-1.0.8-win-x64.exe**（约 100 MB），双击即可运行。只需要一个 EXE，无需安装 Node.js 或下载其他文件。首次启动会自动解压运行资源，可能需要等待几秒。可选下载 **SHA256SUMS.txt** 核对文件校验值。
+在 Release 页面的 **Assets** 中下载 **Moyu-1.0.9-win-x64.exe**（约 100 MB），双击即可运行。只需要一个 EXE，无需安装 Node.js 或下载其他文件。首次启动会自动解压运行资源，可能需要等待几秒。可选下载 **SHA256SUMS.txt** 核对文件校验值。
 
-Download **Moyu-1.0.8-win-x64.exe** (about 100 MB) from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. Optionally use **SHA256SUMS.txt** to verify the download checksum.
+Download **Moyu-1.0.9-win-x64.exe** (about 100 MB) from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. Optionally use **SHA256SUMS.txt** to verify the download checksum.
 
 适用于 Windows x64，已在 Windows 11 x64 实测；Windows 10 尚未在另一台实体机上单独验收。当前不提供 macOS、Linux 或手机版。EXE 尚未签名，下载或启动时可能出现系统安全提示。
 
@@ -82,9 +82,9 @@ v1.0.4 起，在 **伪装皮肤 → 替代页面** 选择广告、时钟、计�
 
 From v1.0.4, choose **Disguises → Replacement page → Ad / Clock / Timer / Music player → Open replacement page**. No video is required. Switch at the bottom of the floating window or save a default in Settings. F7 toggles video and the selected page.
 
-v1.0.8 新增可选的「鼠标悬停显示视频，移开恢复替代页面」。在「伪装皮肤 → 替代页面」勾选后，先打开替代页面：鼠标移入小窗口显示并继续播放视频；移开就暂停、静音并恢复广告／时钟／计时器／音乐页面。F6 紧急隐藏始终优先。在线平台可能阻止自动播放，此时可用平台播放按钮。
+v1.0.9 修正悬停切换：在「伪装皮肤 → 替代页面」或视频小窗口底部开启开关后，直接从普通视频移开鼠标就会暂停、静音并显示伪装；鼠标移入则显示并继续播放视频。F6 紧急隐藏始终优先。在线平台可能阻止自动播放，此时可用平台播放按钮。
 
-v1.0.8 adds an optional **Show video on hover** switch in **Disguises → Replacement page**. Open the replacement page first. Moving the pointer into the small window shows and resumes video; moving away pauses and mutes it, then restores the selected disguise. F6 emergency hiding still takes priority. If a platform blocks automatic playback, use its own play control.
+v1.0.9 fixes hover switching. Turn it on in **Disguises → Replacement page** or at the bottom of the video window. Moving the pointer away from an ordinary video now pauses and mutes it and shows the selected disguise; moving back shows and resumes the video. F6 emergency hiding still takes priority. If a platform blocks automatic playback, use its own play control.
 
 时钟显示本地时间与日期。计时器提供倒计时、秒表、暂停与重置，隐藏、切页或重启后按实际经过时间继续，到时仅显示提示。v1.0.6 起，音乐页改为无声模拟：手动输入最多 10 首歌名，分别设置时长（分:秒或时:分:秒）；播放／暂停、切歌和进度拖动只改变画面，不发出音乐。
 

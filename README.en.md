@@ -6,7 +6,7 @@ A local desktop app for TXT reading, floating video, visual disguises and quick 
 
 ## Download and run
 
-Download **Moyu-1.0.8-win-x64.exe** from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. SHA256SUMS.txt provides the download checksum.
+Download **Moyu-1.0.9-win-x64.exe** from the release's **Assets**, then double-click it. You only need this one EXE; no Node.js or other files are required. Initial startup extracts the runtime and may take a few seconds. SHA256SUMS.txt provides the download checksum.
 
 The app is built for Windows x64 and tested on Windows 11. Windows 10 has not been separately tested on another physical device. macOS, Linux and mobile versions are not currently available. The EXE is unsigned, so your system may display a download or startup warning.
 
@@ -36,7 +36,7 @@ In English, use **Settings → Interface language → Save settings** to switch 
 
 In **Disguises → Replacement page**, choose Ad, Clock, Timer or Music player, then click **Open replacement page**. No video is required. You can also switch at the bottom of the floating window or save a default in Settings. F7 toggles between video and your selected page; restored video stays paused.
 
-From v1.0.8, you can turn on **Show video on hover** in **Disguises → Replacement page**. Open the replacement page, then move the pointer into the small window to show and resume video. Move it away to pause, mute and restore the selected disguise. F6 emergency hiding always takes priority. A platform may block automatic playback; use its own play control if needed.
+v1.0.9 fixes hover switching. Turn on **Hover switch** in **Disguises → Replacement page** or at the bottom of the video window. Moving the pointer away from an ordinary video pauses and mutes it and shows the selected disguise; moving back shows and resumes the video. F6 emergency hiding always takes priority. A platform may block automatic playback; use its own play control if needed.
 
 - **Clock:** live local system time and date.
 - **Timer:** countdown or stopwatch, start/pause/reset, custom minutes and presets. Time continues across page switches, hiding, sleep and app restarts. Completion is visual and silent.
